@@ -11,7 +11,7 @@ using OpenQA.Selenium.Remote;
 using NUnit.Framework.Legacy;
 
 
-public class Login
+public class updatePassword
 {
     public IWebDriver driver = new ChromeDriver();
     private string username = "NehaTest112@gmail.com";
@@ -35,11 +35,7 @@ public class Login
 
         // Change the password
         ChangePassword(originalPassword, updatedPassword);
-
-        // Verify password change
-        //ClassicAssert.IsTrue(IsPasswordChanged(), "Password should be updated successfully.");
-
-       
+                   
     }
 
     [TearDown]
@@ -52,7 +48,7 @@ public class Login
         // Revert password changed
         ChangePassword(updatedPassword, originalPassword);
 
-        // driver.Quit();
+        
 
         if (driver != null)
         {

@@ -15,7 +15,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="ExtentReports" Version="5.0.2" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
     <PackageReference Include="NUnit" Version="4.1.0" />
     <PackageReference Include="NUnit.Analyzers" Version="4.2.0">
@@ -29,14 +28,15 @@
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="125.0.6422.7800" />
     <PackageReference Include="Selenium.WebDriver.MSEdgeDriver" Version="123.0.2420.65" />
     <PackageReference Include="SeleniumExtras.WaitHelpers" Version="1.0.2" />
-    <PackageReference Include="Specflow" Version="3.9.74" />
-    <PackageReference Include="Specflow.NUnit" Version="3.9.74" />
-    <PackageReference Include="Specflow.Tools.Msbuild.Generation" Version="3.9.74" />
     <PackageReference Include="xunit.assert" Version="2.8.1" />
   </ItemGroup>
 
   <ItemGroup>
     <Using Include="NUnit.Framework" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Screenshot\" />
   </ItemGroup>
 
 </Project>
