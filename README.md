@@ -9,6 +9,7 @@
 
 ## Setup
 * IDE: Visual Studio 2022
+* Browser: chrome  125.0.6422.113 version
 * Programming Language : Csharp (C#)
 * Packages Used : Nunit 4.1.0, Selenium.WebDriver 4.21.0, xunit.assert 2.8.1
 
