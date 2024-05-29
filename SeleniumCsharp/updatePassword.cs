@@ -14,7 +14,7 @@ using NUnit.Framework.Legacy;
 public class updatePassword
 {
     public IWebDriver driver = new ChromeDriver();
-    private string username = "NehaTest112@gmail.com";
+    private string username = "NehaTest113@gmail.com";
     private string originalPassword = "OriginalPassword123!";
     private string updatedPassword = "UpdatedPassword456!";
 

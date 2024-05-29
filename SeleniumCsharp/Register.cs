@@ -13,8 +13,8 @@ using System.Xml.Linq;
 
 public class Register
 {
-    public IWebDriver driver = new ChromeDriver();
-    string email;
+    private IWebDriver driver;
+    private string baseUrl = "https://login.onefile.co.uk/login";
 
     private string firstName = "Neha" + Utility.GenerateTime();
     private string lastName = "Katte" + Utility.GenerateTime();
@@ -26,7 +26,7 @@ public class Register
 
     {
         //go to site
-        driver.Navigate().GoToUrl("https://login.onefile.co.uk/login");
+        driver.Navigate().GoToUrl(baseUrl);
         driver.Manage().Window.Maximize();
         WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         IWebElement button = wait.Until(ExpectedConditions
