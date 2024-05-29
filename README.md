@@ -24,7 +24,7 @@ Create a new keychain account.
 Reset the password of the created account.
 
 ## Implementation
-The Hybrid driven (90 % of Modular driven framework) is designed with Methods below
+The Hybrid-driven framework, which incorporates 90% of the Modular-driven framework principles, is designed to support methods such as 
 
 Test Case 1: Register class
 
@@ -33,22 +33,21 @@ Methods used:
 * verifyRegister()- fill first name,lastname, random email, random password, confirm password, select the checkbox for terms and conditions, and Register
 * Teardown()- to completely close the browser
 
-Test Case 2: updatePassword class
+Test Case 2: ResetPassword class
  
 Methods used:
 * Setup()- Launch the browser, navigate to the Login page, and click on Create new keychain
-* changePassword()- To verify login  and change the password
+* CreateAndResetPassword()- To verify login  and change the password
+* createNewKeychainAccount()- To create and register the account
 * Teardown()- to completely close the browser
-* verifyLoginUI()- enter email and password and Login
-* ChangePassword()- to revert the password back to the original one
+* Login()- enter email and password and Login
+* resetPassword()- to reset the password 
 
 Utility class- used to create Random email ID and  generate Time to append for first and Last Names and email and passwords for uniqueness.
 
 
 ## Assumptions 
-1. UpdatePassword class, the test script is written based on assuming the user has valid email and password so as to update to new passowrd.
-so changePassword()is used to set the new password and ChangedPassword() is used to change/revert back to original password.
 
-2. Exception are used to handle any runtime error. 
+1. Exception are used to handle any runtime error. 
 
 
