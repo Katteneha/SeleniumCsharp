@@ -6,6 +6,7 @@
 3. Add plugins that are missing
 4. Save the project/solution
 5. Navigate to Tests --> Select Run All Tests
+   (Please refer Documentation.docx attached above, for screenshot)
 
 ## Setup
 * IDE: Visual Studio 2022
